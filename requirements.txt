@@ -1,0 +1,18 @@
+# Core
+numpy
+pandas
+
+# Visualização
+matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+lightgbm
+xgboost
+
+# Estatística
+scipy
+
+# Persistência de modelos
+joblib

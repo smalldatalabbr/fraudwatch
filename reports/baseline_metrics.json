@@ -1,0 +1,19 @@
+{
+  "model": "LogisticRegression",
+  "pr_auc_valid": 0.8371646967543983,
+  "threshold_policy": "max_recall_with_precision>=0.1",
+  "chosen_threshold": 0.9122635280316401,
+  "precision_valid": 0.24271844660194175,
+  "recall_valid": 0.9090909090909091,
+  "f1_valid": 0.3831417624521073,
+  "confusion_matrix_valid": [
+    [
+      42348,
+      156
+    ],
+    [
+      5,
+      50
+    ]
+  ]
+}
