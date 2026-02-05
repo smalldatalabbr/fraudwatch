@@ -2,6 +2,17 @@
 
 **Sistema de Priorização de Alertas de Fraude**
 
+![Author](https://img.shields.io/badge/author-Jhonathan%20Domingues-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-V1%20in%20progress-orange)
+
+![Python](https://img.shields.io/badge/python-3.12.5-blue?logo=python&logoColor=white)
+![ML](https://img.shields.io/badge/ml-scikit--learn-orange?logo=scikitlearn&logoColor=white)
+![Model](https://img.shields.io/badge/model-LightGBM-black)
+![Model](https://img.shields.io/badge/model-XGBoost-black)
+![Data](https://img.shields.io/badge/data-Pandas%20%7C%20NumPy-blue)
+![Viz](https://img.shields.io/badge/viz-Matplotlib%20%7C%20Seaborn-purple)
+
 ![FraudWatch](imagens/thumbnail.png)
 
 ## Visão Geral
@@ -70,23 +81,22 @@ fraudwatch/
 ├── imagens/
 │   ├── thumbnail.png
 ├── src/
+│       ├── evalution.py
 │       ├── paths.py
 │       └── utils.py
 ├── notebooks/
 │   ├── 01-data_audit_eda.ipynb
-│   ├── 02-train_baseline.ipynb
-│   └── 03-train_main_model.ipynb
+│   └── 02-train_baseline.ipynb
 │
 ├── models/
-│   └── fraudwatch_model.joblib
+│   └── baseline_logreg.pkl
 │
 ├── references/
 │   └── 01_dicionario_de_dados.md
 │
 ├── reports/
 │   ├── baseline_metrics.json
-│   ├── main_model_metrics.json
-│   └── feature_importance.csv
+│   └── threshold_analysis.parquet
 │
 ├── requirements.txt
 └── README.md
@@ -102,7 +112,6 @@ Criação do ambiente virtual e instalação das dependências:
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-
 ```
 
 ---
@@ -154,8 +163,8 @@ Este projeto **não deve ser utilizado em ambientes produtivos**.
 
 ---
 
-## Contato
+## Onde me encontrar
 
-**Jhonathan Domingues**
-
-🌐 [Portifólio](https://jhonathan.me) | 💼 [LinkedIn](https://www.linkedin.com/in/jhonathandomingues)
+[![Website](https://img.shields.io/badge/🌐%20Website-Portfólio-black)](https://jhonathan.me)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Perfil-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jhonathandomingues)
+[![Email](https://img.shields.io/badge/Email-Contato-success?logo=minutemailer&logoColor=white)](mailto:hello@jhonathan.me)
