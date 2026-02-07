@@ -1,0 +1,15 @@
+{
+  "policy_name": "fraudwatch_v1_decisioning",
+  "t1": 0.009930267368085834,
+  "t2": 0.01418609624012262,
+  "costs": {
+    "COST_FP_BLOCK": 1.0,
+    "COST_FN_APPROVE": 10.0,
+    "COST_REVIEW": 0.2
+  },
+  "rules": {
+    "approve": "score < t1",
+    "review": "t1 <= score < t2",
+    "block": "score >= t2"
+  }
+}

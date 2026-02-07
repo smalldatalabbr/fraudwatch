@@ -1,0 +1,23 @@
+{
+  "model": "LightGBM",
+  "dataset": "VALID",
+  "generated_at": "2026-02-07T11:53:11",
+  "pr_auc": 0.86316199893806,
+  "threshold_policy": "max_recall_with_precision>=0.1",
+  "chosen_threshold": 0.01418609624012262,
+  "precision": 0.30864197530864196,
+  "recall": 0.9090909090909091,
+  "f1": 0.4608294930875576,
+  "alerts": 162,
+  "alert_rate": 0.003806480415423295,
+  "confusion_matrix": [
+    [
+      42392,
+      112
+    ],
+    [
+      5,
+      50
+    ]
+  ]
+}
