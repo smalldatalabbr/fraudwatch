@@ -142,6 +142,17 @@ A V1.1 da FraudWatch entrega:
 
 ---
 
+## Como executar
+
+### Ambiente virtual
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+---
+
 ## Roadmap (V2)
 
 Próximas evoluções planejadas:
