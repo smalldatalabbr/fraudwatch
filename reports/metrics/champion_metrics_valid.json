@@ -1,10 +1,10 @@
 {
   "model": "LightGBM",
   "dataset": "VALID",
-  "generated_at": "2026-02-07T11:53:11",
-  "pr_auc": 0.86316199893806,
+  "generated_at": "2026-08-12T12:46:35",
+  "pr_auc": 0.8631619989380601,
   "threshold_policy": "max_recall_with_precision>=0.1",
-  "chosen_threshold": 0.01418609624012262,
+  "chosen_threshold": 0.014186096240122657,
   "precision": 0.30864197530864196,
   "recall": 0.9090909090909091,
   "f1": 0.4608294930875576,

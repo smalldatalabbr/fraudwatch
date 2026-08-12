@@ -1,0 +1,30 @@
+[project]
+name = "fraudwatch"
+version = "0.1.0"
+description = "Risk scoring e priorização de alertas para sistemas antifraude baseados em Machine Learning."
+readme = "README.md"
+authors = [
+    { name = "Jhonathan Domingues", email = "hello@jhonathan.me" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipywidgets>=8.1.8",
+    "jinja2>=3.1.6",
+    "joblib==1.5.3",
+    "jupyter>=1.1.1",
+    "lightgbm==4.7.0",
+    "matplotlib==3.11.1",
+    "numpy==2.5.1",
+    "pandas==3.0.3",
+    "pyarrow==25.0.0",
+    "scikit-learn==1.9.0",
+    "scipy==1.18.0",
+    "seaborn==0.13.2",
+    "shap==0.52.0",
+    "xgboost==3.3.0",
+]
+
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"

@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Status](https://img.shields.io/badge/status-V1.1%20completed-green)
 
-![Python](https://img.shields.io/badge/python-3.10.12-blue?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.14.X-blue?logo=python&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/ml-scikit--learn-orange?logo=scikitlearn&logoColor=white)
 ![LightGBM](https://img.shields.io/badge/model-LightGBM-black)
 ![XGBoost](https://img.shields.io/badge/model-XGBoost-black)
@@ -20,7 +20,7 @@
 
 ## Visão Geral
 
-A **FraudWatch** é uma Proof of Concept (POC) que demonstra a construção de um sistema de **priorização de alertas de fraude baseado em Machine Learning**.
+Este é um **case técnico de Machine Learning aplicado à priorização de alertas de fraude**.
 
 O projeto trata o modelo como um **motor de geração de scores de risco**, separando explicitamente três camadas fundamentais de sistemas de risco:
 
@@ -41,22 +41,22 @@ Empresas que operam com grandes volumes de transações financeiras enfrentam de
 - limitação de capacidade humana para análise manual;
 - forte desbalanceamento entre eventos legítimos e fraudulentos.
 
-A **FraudWatch** busca priorizar eventos com maior risco, permitindo que equipes concentrem esforços nos casos de maior impacto operacional.
+O projeto busca priorizar eventos com maior risco, permitindo que equipes concentrem esforços nos casos de maior impacto operacional.
 
 ---
 
-## Abordagem da Solução (V1.1)
+## Abordagem Atual
 
-A versão atual implementa um pipeline completo de **risk scoring**:
+A implementação atual contempla um pipeline completo de **risk scoring**:
 
 - auditoria e análise exploratória do histórico de transações;
 - divisão **temporal** em treino, validação e teste;
-- treinamento de modelo baseline (Logistic Regression);
-- treinamento e seleção de modelo principal (LightGBM vs XGBoost);
+- treinamento de modelo baseline (**Logistic Regression**);
+- treinamento e seleção de modelo principal (**LightGBM vs XGBoost**);
 - avaliação com métricas relevantes para fraude:
-  - Recall
-  - Precision
-  - PR-AUC
+  - Recall;
+  - Precision;
+  - PR-AUC;
   - matriz de confusão;
 - análise de explicabilidade com **SHAP**;
 - definição explícita de **política de decisão** baseada em score;
@@ -132,10 +132,10 @@ fraudwatch/
 
 ## Resultados
 
-A V1.1 da FraudWatch entrega:
+A implementação atual entrega:
 
 - modelo baseline e modelo campeão treinados e avaliados;
-- geração de **scores de risco interpretáveis**;
+- geração de **scores de risco**;
 - política de decisão explícita baseada em thresholds;
 - análise de trade-offs entre falsos positivos e falsos negativos;
 - artefatos persistidos para rastreabilidade do processo decisório.
@@ -144,30 +144,27 @@ A V1.1 da FraudWatch entrega:
 
 ## Como executar
 
-### Ambiente virtual
+### Ambiente
+
+O projeto utiliza **uv** para gerenciamento do ambiente virtual e das dependências.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+uv sync
 ```
----
 
-## Roadmap (V2)
+Para executar os notebooks, utilize o ambiente criado pelo `uv` como interpretador Python no VS Code ou execute o Jupyter pelo ambiente do projeto:
 
-Próximas evoluções planejadas:
-
-- simulação temporal de decisões em fluxo histórico;
-- monitoramento de **drift de dados e performance do modelo**;
-- estratégia de retreino;
-- geração automatizada de relatórios de decisão.
+```bash
+uv run jupyter lab
+```
 
 ---
 
 ## Status
 
-**V1.1 — modelo e política de decisão concluídos**  
-**V2 — monitoramento e lifecycle planejados**
+**Case técnico em evolução.**
+
+A implementação atual possui o pipeline de modelagem, avaliação, risk scoring, política de decisão e explicabilidade. 
 
 ---
 

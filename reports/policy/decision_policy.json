@@ -1,7 +1,7 @@
 {
   "policy_name": "fraudwatch_v1_decisioning",
-  "t1": 0.009930267368085834,
-  "t2": 0.01418609624012262,
+  "t1": 0.009930267368085858,
+  "t2": 0.014186096240122657,
   "costs": {
     "COST_FP_BLOCK": 1.0,
     "COST_FN_APPROVE": 10.0,
